@@ -1,11 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UdemyDiaryApp.Data;
+using UdemyDiaryApp.Models;
 
 namespace UdemyDiaryApp.Controllers;
 
 public class DiaryEntriesController : Controller
 {
+    private readonly ApplicationDbContext _db;
+
+    public DiaryEntriesController(ApplicationDbContext db)
+    {
+        _db = db;
+    }
     public IActionResult Index()
     {
-        return View();
+        List<DiaryEntry> objDiaryEntryList = _db.DiaryEntries.ToList();
+        return View(objDiaryEntryList);
     }
 }
