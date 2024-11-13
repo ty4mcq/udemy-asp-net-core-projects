@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35209.166
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyDiaryApp", "UdemyDiaryApp\UdemyDiaryApp.csproj", "{ADA825E8-6A9E-47FE-A59A-A04F506D5EBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyDiaryApp", "UdemyDiaryApp\UdemyDiaryApp.csproj", "{5852908A-F6AC-459F-BF36-606D9E169D5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADA825E8-6A9E-47FE-A59A-A04F506D5EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADA825E8-6A9E-47FE-A59A-A04F506D5EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADA825E8-6A9E-47FE-A59A-A04F506D5EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADA825E8-6A9E-47FE-A59A-A04F506D5EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5852908A-F6AC-459F-BF36-606D9E169D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5852908A-F6AC-459F-BF36-606D9E169D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5852908A-F6AC-459F-BF36-606D9E169D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5852908A-F6AC-459F-BF36-606D9E169D5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8932E79B-6B49-48AE-A3BB-DA72757D6CBA}
+		SolutionGuid = {FE803B58-16A1-492B-860A-348FAD78AD9A}
 	EndGlobalSection
 EndGlobal
