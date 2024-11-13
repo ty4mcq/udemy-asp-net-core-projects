@@ -363,4 +363,4 @@ healthchecksdb
 FodyWeavers.xsd
 
 # Migrations folder
-Migrations/
+/Migrations/
