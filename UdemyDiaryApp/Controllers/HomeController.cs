@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
 using UdemyDiaryApp.Models;
 
 namespace UdemyDiaryApp.Controllers
@@ -18,6 +18,11 @@ namespace UdemyDiaryApp.Controllers
             return View();
         }
 
+        public IActionResult MyPage()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
@@ -26,7 +31,12 @@ namespace UdemyDiaryApp.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(
+                new ErrorViewModel
+                {
+                    RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier,
+                }
+            );
         }
     }
 }
