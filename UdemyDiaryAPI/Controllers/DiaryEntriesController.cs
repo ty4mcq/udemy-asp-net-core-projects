@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using UdemyDiaryAPI.Data;
 using UdemyDiaryAPI.Models;
 
@@ -17,9 +18,21 @@ namespace UdemyDiaryAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<DiaryEntry> GetDiaryEntries()
+        public async Task<ActionResult<IEnumerable<DiaryEntry>>> GetDiaryEntries()
         {
-            return _context.DiaryEntries.ToList();
+            return await _context.DiaryEntries.ToListAsync();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<DiaryEntry>> GetDiaryEntry(int id)
+        {
+            var diaryEntry = await _context.DiaryEntries.FindAsync(id);
+
+            if (diaryEntry == null)
+            {
+                return NotFound();
+            }
+            return diaryEntry;
         }
     }
 }
