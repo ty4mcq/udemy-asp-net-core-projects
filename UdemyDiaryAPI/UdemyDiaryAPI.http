@@ -1,0 +1,6 @@
+@UdemyDiaryAPI_HostAddress = http://localhost:5294
+
+GET {{UdemyDiaryAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
