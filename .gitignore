@@ -361,3 +361,6 @@ healthchecksdb
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Migrations folder
+/Migrations/
